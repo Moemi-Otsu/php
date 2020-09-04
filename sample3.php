@@ -43,3 +43,25 @@ $tom = 'Tom is ' . 15 . ' years old.';
 $a = 10;
 $a += 1;
 echo $a, PHP_EOL;
+
+$tom = 'Tom is ' . 15 . ' years old.';
+
+$a = 10;
+echo $a++, PHP_EOL;
+echo $a, PHP_EOL;
+
+echo ++$a, PHP_EOL;
+echo $a, PHP_EOL;
+echo $a--, PHP_EOL;
+echo $a, PHP_EOL;
+echo --$a, PHP_EOL;
+echo $a, PHP_EOL;
+
+// 論理演算子では、評価結果がわかった時点で演算結果を返します。
+// これを短絡評価と呼ぶ。最初のissetが偽である場合、次の$argvの評価も一切行われない。
+if (isset($argv[1]) && $argv[1]) {
+		echo '与えられた引数は真です。', PHP_EOL;
+}
+else {
+		echo '引数が与えられていないか、与えられた引数が真ではありません', PHP_EOL;
+}
