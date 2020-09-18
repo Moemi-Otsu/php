@@ -66,7 +66,5 @@ $c = array('a' => 1, 'b' => 2);
 
 var_dump($a == $b);
 var_dump($a === $b);
-
 var_dump($a + $c);
-
 var_dump($c + $a);
