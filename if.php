@@ -12,7 +12,17 @@
 //		$a++;
 //} while ($a < 10);
 
-$array = array(1, 2, 3, 4, 5,);
-for ($i = 0, $end = count($array); $i < $end; ++$i) {
-		echo $array[$i], PHP_EOL;
+//$array = array(1, 2, 3, 4, 5,);
+//for ($i = 0, $end = count($array); $i < $end; ++$i) {
+//		echo $array[$i], PHP_EOL;
+//}
+
+$fruits_color = array(
+		'apple' => 'red',
+		'banana' => 'yellow',
+		'orange' => 'orange',
+);
+
+foreach ($fruits_color as $name => $color) {
+		echo "$name is $color", PHP_EOL;
 }
