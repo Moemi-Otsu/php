@@ -42,11 +42,45 @@
 // continue
 // continue構文は、現在の繰り返し処理を途中で終了し、次の繰り返し処理をする場合に用いられる。
 // 奇数の時にはcontinueで現在の反復処理を終了して、次への処理を行い、偶数の時のみ出力を行う。
-$dice = range(1, 6);
-shuffle($dice);
-foreach ($dice as $value) {
-		if ($value % 2 !== 0) {
-				continue;
-		}
-		echo $value, PHP_EOL;
+//$dice = range(1, 6);
+//shuffle($dice);
+//foreach ($dice as $value) {
+//		if ($value % 2 !== 0) {
+//				continue;
+//		}
+//		echo $value, PHP_EOL;
+//}
+
+
+// switch
+//$hour = date('G'); //現在の時刻を取得
+//if ($hour === '6') {
+//		echo "朝の6時です、おはようございます。", PHP_EOL;
+//} elseif ($hour === '12') {
+//		echo "正午ですこんにちは。", PHP_EOL;
+//} elseif ($hour === '15'){
+//		echo "3時のおやつの時間です。", PHP_EOL;
+//} else {
+//		echo "どうも", PHP_EOL;
+//}
+
+$hour = date('G');
+switch ($hour) {
+		case '6':
+				echo "朝の6時です、おはようございます。", PHP_EOL;
+				break;
+		case '12':
+				echo "正午ですこんにちは。", PHP_EOL;
+				break;
+		case '15':
+				echo "3時のおやつの時間です。", PHP_EOL;
+				break;
+		case '22':
+		case '23':
+		case '0':
+				echo "もう寝る時間です。", PHP_EOL;
+				break;
+		default:
+				echo "どうも", PHP_EOL;
+				break;
 }
