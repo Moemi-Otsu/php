@@ -64,23 +64,28 @@
 //		echo "どうも", PHP_EOL;
 //}
 
-$hour = date('G');
-switch ($hour) {
-		case '6':
-				echo "朝の6時です、おはようございます。", PHP_EOL;
-				break;
-		case '12':
-				echo "正午ですこんにちは。", PHP_EOL;
-				break;
-		case '15':
-				echo "3時のおやつの時間です。", PHP_EOL;
-				break;
-		case '22':
-		case '23':
-		case '0':
-				echo "もう寝る時間です。", PHP_EOL;
-				break;
-		default:
-				echo "どうも", PHP_EOL;
-				break;
-}
+//$hour = date('G');
+//switch ($hour) {
+//		case '6':
+//				echo "朝の6時です、おはようございます。", PHP_EOL;
+//				break;
+//		case '12':
+//				echo "正午ですこんにちは。", PHP_EOL;
+//				break;
+//		case '15':
+//				echo "3時のおやつの時間です。", PHP_EOL;
+//				break;
+//		case '22':
+//		case '23':
+//		case '0':
+//				echo "もう寝る時間です。", PHP_EOL;
+//				break;
+//		default:
+//				echo "どうも", PHP_EOL;
+//				break;
+//}
+
+// exit
+echo "start", PHP_EOL;
+exit;
+echo "end", PHP_EOL; //これは出力されない
