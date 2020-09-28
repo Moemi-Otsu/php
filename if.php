@@ -90,3 +90,11 @@
 echo "start", PHP_EOL;
 exit;
 echo "end", PHP_EOL; //これは出力されない
+
+if ($is_error) {
+		goto error;
+}
+
+error:
+	echo "エラーが発生しました。", PHP_EOL;
+	exit(1);
