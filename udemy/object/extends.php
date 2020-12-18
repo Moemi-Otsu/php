@@ -1,9 +1,15 @@
 <?php
 
+// 親クラス
 class BaseProduct{
 		//変数 関数
 		public function echoProduct() {
 				echo '親クラスです';
+		}
+		
+		// オーバーライド（上書き）
+		public function getProduct(){
+				echo '親の関数です';
 		}
 }
 
