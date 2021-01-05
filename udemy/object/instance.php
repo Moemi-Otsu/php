@@ -28,8 +28,20 @@ class Product{
 		}
 }
 
+// このインスタンス内に変数が入っている
 $instance = new Product('テスト');
 
+// クラスをインスタンス化するとobjectとして表示される
+var_dump($instance);
+
+//object(Product)#1 (1) {
+//["product":"Product":private]=>
+//  string(9) "テスト"
+//}
+//テスト<br><br>テスト追加分<br>静的<br>~
+
+
+// インスタンス変数から矢印をつなぐことで関数を呼び出すことができる
 $instance->getProduct();
 echo '<br>';
 
