@@ -42,14 +42,14 @@ var_dump($instance);
 
 
 // インスタンス変数から矢印をつなぐことで関数を呼び出すことができる
-$instance->getProduct();
-echo '<br>';
-
-$instance->addProduct('追加分');
-echo '<br>';
-
-$instance->getProduct();
-echo '<br>';
-
-Product::getStaticProduct('静的');
-echo '<br>';
+//$instance->getProduct();
+//echo '<br>';
+//
+//$instance->addProduct('追加分');
+//echo '<br>';
+//
+//$instance->getProduct();
+//echo '<br>';
+//
+//Product::getStaticProduct('静的');
+//echo '<br>';
