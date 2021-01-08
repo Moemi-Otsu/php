@@ -1,6 +1,18 @@
 <?php
 
-// 親クラス
+// 抽象クラス
+
+abstract class ProductAbstract {
+		// 変数 関数
+		public function echoProduct() {
+				echo '親クラスです';
+		}
+		
+		// 抽象メソッド
+		abstract public function getProduct();
+}
+
+// 具象クラス、親クラス
 
 class BaseProduct {
 		// 変数 関数
@@ -14,9 +26,9 @@ class BaseProduct {
 		}
 }
 
-// 子クラス
+// 子クラス・派生クラス・サブクラス
 
-final class Product extends BaseProduct {
+class Product extends ProductAbstract {
 		// アクセス修飾子
 		// private(外からアクセスできない)
 		// protected（自分・継承したクラス）
@@ -31,7 +43,7 @@ final class Product extends BaseProduct {
 				$this->product = $product;
 		}
 		
-		final public function getProduct() {
+		public function getProduct() {
 				echo $this->product;
 		}
 		
