@@ -6,6 +6,6 @@
 
 <?php else: ?>
 
-<p>このメッセージは $display_message が真のときのみ表示されるメッセージです。</p>
+<p>このメッセージは $display_message が偽のときのみ表示されるメッセージです。</p>
 
 <?php endif; ?>
