@@ -9,6 +9,7 @@ if (isset($name)) {
 <p><?php echo $name; ?></p>
 
 <?php
-
+        // PHPブロックが再開される
 ?>
+
 </html>
