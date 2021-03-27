@@ -1,5 +1,5 @@
 <?php
-function add_one(&$value)
+function &add_one(&$value)
 {
     $value += 1;
     return $value;
