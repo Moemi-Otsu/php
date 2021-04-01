@@ -1,14 +1,21 @@
 <?php
+
 class Employee
 {
+    public $name;
+    public $state = '働いている';
+  
     public function work()
     {
         echo '書類を整理しています', PHP_EOL;
     }
 }
 
-// インスタンス化
 $yamada = new Employee();
 
-// クラスメソッドの呼び出し
+$yamada->name = '山田';
+
+// echo
+echo $yamada->state, $yamada->name, 'さん';
+
 $yamada->work();
