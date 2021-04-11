@@ -2,20 +2,23 @@
 
 interface Reader
 {
-  public function read();
+    public function read();
 }
 
 interface Writer
 {
-  public function write($value);
+    public function write($value);
 }
 
-class Configure implememts Reader, Writer
+class Configure implements Reader, Writer
 {
-  public function write($value)
-  {
-    // 書き込みの処理
-  }
+    public function write($value)
+    {
+        // 書き込みの処理
+    }
   
-  public function read()
+    public function read()
+    {
+        // 読み込みの処理
+    }
 }
