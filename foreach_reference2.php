@@ -32,7 +32,11 @@ $c[1][1] = "z";
 
 foreach ($c as $v1) {
   foreach ($v1 as $v2) {
-    var_dump($v1);
+//    var_dump($v1);
     echo "$v2\n";
   }
+}
+
+foreach (array(1, 2, 3, 4, 5) as $v) {
+  echo "$v\n";
 }
