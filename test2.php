@@ -21,6 +21,7 @@ echo $foo1->instance_variable;
 echo $foo2->instance_variable;
 
 Foo::$class_variable = "ううう";
+Foo::$class_variable = "えええ";
 
 $foo1->showClassVariable();
 $foo2->showClassVariable();
