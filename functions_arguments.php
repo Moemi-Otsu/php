@@ -25,3 +25,14 @@ function makecoffee($type = "cappuccino")
 //echo makecoffee();
 echo makecoffee(null);
 echo makecoffee('espresso');
+
+// スカラー型以外をデフォルト値として使用する
+
+function makecoffee2($types = array("cappuccino"), $cofeeMaker = NULL)
+{
+  $device = is_null($cofeeMaker) ? "hands" : $cofeeMaker;
+  return "Making a cup of ".join(", ", $types)." with $device.\n";
+}
+
+echo makecoffee2();
+echo makecoffee2(array("cappuccino", "lavazza"), "teapot");
