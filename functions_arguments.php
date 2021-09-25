@@ -24,3 +24,4 @@ function makecoffee($type = "cappuccino")
 }
 //echo makecoffee();
 echo makecoffee(null);
+echo makecoffee('espresso');
