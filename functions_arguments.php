@@ -36,3 +36,11 @@ function makecoffee2($types = array("cappuccino"), $cofeeMaker = NULL)
 
 echo makecoffee2();
 echo makecoffee2(array("cappuccino", "lavazza"), "teapot");
+
+function makeyogurt($flavour, $type = "acidophilus")
+{
+  return "Making a bowl of $type $flavour.\n";
+}
+
+echo makeyogurt("raspberry");
+echo makeyogurt("raspberry", "aaa");
