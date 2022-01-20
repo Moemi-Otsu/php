@@ -9,8 +9,15 @@ $aryHoge = [
     'five' => 5
 ];
 
+//$aryHoge['test'] = array_map(function ($item) {
+//    return $item * 2;
+//}, $aryHoge);
+
 $aryHoge['test'] = array_map(function ($item) {
-    return $item * 2;
+    $item['count_favorite'] = $item * 2 ?? 0;
+    
+    return $item;
 }, $aryHoge);
 
-var_dump($aryHoge['test']);
+//var_dump($aryHoge['test']);
+var_dump($aryHoge);
